@@ -9,15 +9,13 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route exact path="/:id">
-            <CallPage />
-          </Route>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route path="*">
-            <NoMatch />
-          </Route>
+          {/* <Route exact path="/:id"> */}
+          <Route path="/:id" element={<CallPage />} />
+
+          {/* <Route exact path="/"> */}
+          <Route path="/" element={<HomePage />} />
+
+          <Route path="*" element={<NoMatch />} />
         </Routes>
       </Router>
     </>

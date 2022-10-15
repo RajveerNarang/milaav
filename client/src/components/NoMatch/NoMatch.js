@@ -2,7 +2,11 @@ import React from "react";
 import "./NoMatch.scss";
 
 const NoMatch = () => {
-  return <div>NoMatch</div>;
+  return (
+    <>
+      <h1>No Match</h1>
+    </>
+  );
 };
 
 export default NoMatch;
