@@ -12,7 +12,7 @@ const CallPage = () => {
       <div className="callpage-container">
         <video className="video-container" src="" controls></video>
         <CallPageHeader />
-        {/* <CallPageFooter /> */}
+        <CallPageFooter />
         <MeetingInfo />
         {/* <Messenger /> */}
       </div>
