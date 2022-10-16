@@ -7,6 +7,7 @@ import {
   faUser,
   faShieldAlt,
 } from "@fortawesome/free-solid-svg-icons";
+
 const MeetingInfo = () => {
   return (
     <>
@@ -17,18 +18,24 @@ const MeetingInfo = () => {
           <FontAwesomeIcon className="icon" icon={faTimes} />
         </div>
         <button className="add-people-btn">
-          <FontAwesomeIcon icon={faUser} />
+          <FontAwesomeIcon className="icon" icon={faUser} />
           Add Others
         </button>
-        <p className="info-text">or share the meet link</p>
+        <p className="info-text">
+          Or share this meeting link with others you want in the meeting
+        </p>
         <div className="meet-link">
-          <span>random boom boom</span>
+          <span>Some random URL</span>
           <FontAwesomeIcon className="icon" icon={faCopy} />
         </div>
         <div className="permission-text">
           <FontAwesomeIcon className="icon" icon={faShieldAlt} />
-          <p>some random data .....</p>
+          <p className="small-text">
+            People who use this meeting link must get your permission before
+            they can join.
+          </p>
         </div>
+        <p className="small-text">Joined As User</p>
       </div>
     </>
   );
