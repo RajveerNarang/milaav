@@ -14,7 +14,7 @@ const CallPage = () => {
         <CallPageHeader />
         <CallPageFooter />
         <MeetingInfo />
-        {/* <Messenger /> */}
+        <Messenger />
       </div>
     </>
   );
