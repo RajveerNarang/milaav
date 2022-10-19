@@ -38,8 +38,10 @@
         margin-left: 10px;
       }
       &.active {
-        border-bottom: 2px solid #04796a;
-        color: #04796a;
+        // border-bottom: 2px solid #04796a;
+        // color: #04796a;
+        border-bottom: 2px solid orange;
+        color: orange;
       }
       &:hover {
         cursor: pointer;
@@ -87,7 +89,8 @@
     .icon {
       cursor: pointer;
       &:hover {
-        color: #04796a;
+        // color: #04796a;
+        color: orange;
       }
     }
   }

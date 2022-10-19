@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/RajveerNarang/milaav/issues"
   },
-  "homepage": "https://github.com/RajveerNarang/milaav#readme"
+  "homepage": "https://github.com/RajveerNarang/milaav#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "redis": "^4.3.1",
+    "socket.io": "^4.5.3"
+  }
 }
