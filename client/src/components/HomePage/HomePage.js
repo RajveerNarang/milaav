@@ -1,10 +1,22 @@
 import React from "react";
 import "./HomePage.scss";
 import Header from "../UI/Header/Header";
+import { useNavigate } from "react-router-dom";
+import shortid from "shortid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVideo, faKeyboard } from "@fortawesome/free-solid-svg-icons";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+  const startCall = () => {
+    //generate unique id
+
+    const uid = shortid.generate();
+    //redirect to home page
+    // history.push(`/${uid}#init`);
+    navigate(`/${uid}#init`);
+  };
+
   return (
     <>
       {/* <h1>HomePage</h1> */}
@@ -19,7 +31,7 @@ const HomePage = () => {
                 meetings, Milaav to make it free and available for all.
               </p>
               <div className="action-btn">
-                <button className="btn green">
+                <button className="btn green" onClick={startCall}>
                   <FontAwesomeIcon className="icon-block" icon={faVideo} />
                   New Meeting
                 </button>
