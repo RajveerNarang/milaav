@@ -31,7 +31,7 @@ const Messenger = () => {
             <div className="sender">
               You <small>10:00 PM</small>
             </div>
-            <p className="msg">Toing toing</p>
+            <p className="msg">Ingenious</p>
           </div>
         </div>
         <div className="send-msg-section">
